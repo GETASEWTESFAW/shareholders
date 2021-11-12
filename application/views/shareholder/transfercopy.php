@@ -397,7 +397,7 @@ if(isset($_POST['submit'])){
   VALUES ('$account_no', '$seller_share','$name','$raccount_no','$rname','$rtotal_share','$total_share_transfered','$total_share_transfered_in_birr','$buyyer_paidup_in_birr','$seller_paidup','$transfer_date','$value_date','$pervalue','pending','$year','$agreement','$agred_to','$both_seller','$both_buyer','$tt')"
   ) or die(mysqli_error($conn));
 
-header("location:http://127.0.0.1/shareholder/shareholder/transfer?id=".$id."&transfer=okay&from=$from&to=$to");
+header("location:http://172.23.2.174/shareholder/shareholder/transfer?id=".$id."&transfer=okay&from=$from&to=$to");
 }
 ?>
 

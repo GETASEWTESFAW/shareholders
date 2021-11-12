@@ -157,7 +157,7 @@
                                         
                                       }
                                       
-                                      header("location: http://127.0.0.1/shareholder/shareholder/edit_cap_dividend");
+                                      header("location: http://172.23.2.174/shareholder/shareholder/edit_cap_dividend");
                                       }
                                       ?>
                                     

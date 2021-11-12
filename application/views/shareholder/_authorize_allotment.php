@@ -121,7 +121,7 @@ $account_no = $row_allot['account_no'];
 
 $result = mysqli_query($conn,"UPDATE allotment SET allot_status = 'authorized' where id='$ids'") or die(mysqli_error($conn));
 
-header('location:http://127.0.0.1/shareholder/shareholder/authorize_allotment?authorize=ok');
+header('location:http://172.23.2.174/shareholder/shareholder/authorize_allotment?authorize=ok');
 
 }
 }
@@ -154,7 +154,7 @@ $result1 = mysqli_query($conn,"UPDATE shareholders set total_paidup_capital_inbi
 
 $result = mysqli_query($conn,"UPDATE capitalized SET capitalized_status = 'authorized' where id='$id[$i]'");
 
-header('location:http://127.0.0.1/shareholder/shareholder/authorize_cashpayment?authorize=ok');
+header('location:http://172.23.2.174/shareholder/shareholder/authorize_cashpayment?authorize=ok');
 
 }
 }

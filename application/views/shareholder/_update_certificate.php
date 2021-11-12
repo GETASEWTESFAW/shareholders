@@ -151,7 +151,7 @@ function showUser(str) {
 
                 mysqli_query($conn,"UPDATE certificate SET issued_share_certificate = '$issued_share',prepared_share_certificate = '$prepared_share' WHERE account_no = '$account_no'") or die(mysqli_error($conn));
 
-                header('location:http://127.0.0.1/shareholder/shareholder/certificate_report?status=success')								
+                header('location:http://172.23.2.174/shareholder/shareholder/certificate_report?status=success')								
 				
 
 				?>

@@ -40,7 +40,7 @@ $allotment = $row['allotment'];
 
 mysqli_query($conn,"UPDATE shareholders SET total_share_subscribed = total_share_subscribed + $allotment WHERE account_no = '$account_no'");
 
-header('location:http://127.0.0.1/shareholder/shareholder/allotment?authorize=ok');
+header('location:http://172.23.2.174/shareholder/shareholder/allotment?authorize=ok');
 
 }
 }

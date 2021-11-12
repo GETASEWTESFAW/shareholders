@@ -29,8 +29,11 @@
                         <!-- left column -->
                       
                  	<?php 
-                   
-                    echo $this->load->view('shareholder/_dividend_report'); ?>
+                   //$this->load->view('shareholder/_dividend_algorithm');
+                    echo $this->load->view('shareholder/_dividend_report1');
+                    
+                    ?>
+                    
                                  
                </div>   <!-- /.row -->
                 </section><!-- /.content -->

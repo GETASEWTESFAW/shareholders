@@ -41,12 +41,12 @@ $options = $_POST['optionsRadios'];
 if($options == 'option1'){
 
     
-header('location:http://127.0.0.1/shareholder/shareholder/transfer?id=$id');
+header('location:http://172.23.2.174/shareholder/shareholder/transfer?id=$id');
 
 
 }else{
 
-header('location:http://127.0.0.1/shareholder/shareholder/create_shareholder_from_existing');    
+header('location:http://172.23.2.174/shareholder/shareholder/create_shareholder_from_existing');    
 
 }
 }

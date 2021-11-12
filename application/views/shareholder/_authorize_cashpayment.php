@@ -162,7 +162,7 @@ $query_cap = mysqli_query($conn,"SELECT * from capitalized where
     
     mysqli_query($conn,"UPDATE allotment SET allotment = '$allot_update' where account_no='$account_no'") or die(mysqli_error($conn));
     
-   header('location:http://127.0.0.1/shareholder/shareholder/authorize_cashpayment?authorize=ok');
+   header('location:http://172.23.2.174/shareholder/shareholder/authorize_cashpayment?authorize=ok');
 
 }
 }
@@ -195,7 +195,7 @@ $capitalized_in_birr = $row_cap['capitalized_in_birr'];
 
     $result = mysqli_query($conn,"UPDATE capitalized SET capitalized_status = 'authorized' where id='$id[$i]'");
     
-   header('location:http://127.0.0.1/shareholder/shareholder/authorize_cashpayment?authorize=ok');
+   header('location:http://172.23.2.174/shareholder/shareholder/authorize_cashpayment?authorize=ok');
 
 }
 }

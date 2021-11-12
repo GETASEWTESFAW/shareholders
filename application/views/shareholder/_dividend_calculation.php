@@ -154,7 +154,7 @@ ajaxRequest.onreadystatechange = function(){
 
 											//mysqli_query($conn,"UPDATE shareholders set total_share_subscribed = total_share_subscribed + '$capitalized_share',total_share_subscribed_inbirr = total_share_subscribed_inbirr + '$capitalized_in_birr' where name = '$name'") or die(mysqli_error($conn));
 													
-													header('location:http://127.0.0.1/shareholder/shareholder/cash_payment?cash=paid')								
+													header('location:http://172.23.2.174/shareholder/shareholder/cash_payment?cash=paid')								
 	
 											?>
 									

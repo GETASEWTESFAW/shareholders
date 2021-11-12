@@ -143,7 +143,7 @@ function showUser(str) {
 											mysqli_query($conn,"INSERT into dividend_amount (dividend,year) 
 												values ('$amount','$year3')") or die(mysqli_error($conn));
 
-										    header('location:http://127.0.0.1/shareholder/shareholder/add_dividend?dividend=success');								
+										    header('location:http://172.23.2.174/shareholder/shareholder/add_dividend?dividend=success');								
 											
 
 											?>

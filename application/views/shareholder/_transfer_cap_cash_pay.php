@@ -164,7 +164,7 @@ $role = $this->session->userdata['logged_in']['role'];
 
         //$result = mysqli_query($conn,"UPDATE capitalized SET capitalized_status = 'authorized' where id='$id[$i]'");
         
-        header('location:http://127.0.0.1/shareholder_dividend/shareholder/cash_rev_report?reverse=ok');
+        header('location:http://172.23.2.174/shareholder_dividend/shareholder/cash_rev_report?reverse=ok');
  
     }
 }

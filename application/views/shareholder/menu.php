@@ -29,7 +29,7 @@ $to = $budget_result['budget_to'];
                               
             <ul class="sidebar-menu">
             <li>
-                <a href="http://127.0.0.1/shareholder/shareholder/layouts">
+                <a href="http://172.23.2.174/shareholder/shareholder/layouts">
                                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
             </li>
@@ -293,7 +293,7 @@ $to = $budget_result['budget_to'];
             <ul class="sidebar-menu">
   
                         <li>
-                            <a href="http://127.0.0.1/shareholder/shareholder/layouts">
+                            <a href="http://172.23.2.174/shareholder/shareholder/layouts">
                                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                             </a>
                         </li>

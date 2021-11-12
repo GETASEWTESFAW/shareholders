@@ -321,7 +321,7 @@ if($_POST['agreement'] == 'buyer'){
                     VALUES ('NIB','$seller_share','NIB','$raccount_no','$rname','$rtotal_share','$total_share_transfered','$total_share_transfered_in_birr','$buyyer_paidup','$seller_paidup','$transfer_date','$value_date','500','pending','$year','buyer','$raccount_no','','')"
   ) or die(mysqli_error($conn));
 
-  header("location:http://127.0.0.1/shareholder/shareholder/transfer?id=".$id."&transfer=okay&from=$from&to=$to");
+  header("location:http://172.23.2.174/shareholder/shareholder/transfer?id=".$id."&transfer=okay&from=$from&to=$to");
 
   } ?>
 

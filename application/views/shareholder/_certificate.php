@@ -140,7 +140,7 @@ function showUser(str) {
 
                                             mysqli_query($conn,"UPDATE shareholders set cert_status = 'prepared' where account_no = '$account_no'") or die(mysqli_error($conn));
 
-                                            header('location:http://127.0.0.1/shareholder_test/shareholder/certificate?status=success&from='.$from.'&to='.$to);                             
+                                            header('location:http://172.23.2.174/shareholder_test/shareholder/certificate?status=success&from='.$from.'&to='.$to);                             
                                             
 
                                             ?>

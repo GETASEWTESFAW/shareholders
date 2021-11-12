@@ -270,13 +270,13 @@ $total_sum = $array_result + $share_subscribed_inbirr - $po_row['sum(total_share
 
         mysqli_query($conn,"INSERT into total_paidup_utilized (shareholder_name,value,year) values('$name','$total_paidup','$year3')") or die(mysqli_error($conn));
 
-  header("location:http://127.0.0.1/shareholder/shareholder/dividend_report?from=".$from."&to=".$to);
+  header("location:http://172.23.2.174/shareholder/shareholder/dividend_report?from=".$from."&to=".$to);
 
         } else {
 
         mysqli_query($conn,"UPDATE total_paidup_utilized set value = '$total_paidup' where year = '$year3'") or die(mysqli_error($conn));
 
-  header("location:http://127.0.0.1/shareholder/shareholder/dividend_report?from=".$from."&to=".$to);
+  header("location:http://172.23.2.174/shareholder/shareholder/dividend_report?from=".$from."&to=".$to);
      
     } 
   }

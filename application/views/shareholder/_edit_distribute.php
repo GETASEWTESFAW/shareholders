@@ -453,7 +453,7 @@ if (isset($_POST['authorize']) && isset($_POST['id']) && isset($_POST['transfer_
         $result1 = mysqli_query($conn,"UPDATE shareholders set total_paidup_capital_inbirr = total_paidup_capital_inbirr + '$capitalized_in_birr' where account_no='$account_no'") or die(mysqli_error($conn));
         $result = mysqli_query($conn,"UPDATE capitalized SET capitalized_status = 'authorized' where id='$ids'");
             
-           header('location:http://127.0.0.1/shareholder_dividend/shareholder/authorize_cashpayment?authorize=ok');
+           header('location:http://172.23.2.174/shareholder_dividend/shareholder/authorize_cashpayment?authorize=ok');
  
     }
     */
@@ -486,7 +486,7 @@ if (isset($_POST['authorize']) && isset($_POST['id']) && isset($_POST['transfer_
 
             $result = mysqli_query($conn,"UPDATE capitalized SET capitalized_status = 'authorized' where id='$id[$i]'");
             
-           header('location:http://127.0.0.1/shareholder_dividend/shareholder/authorize_cashpayment?authorize=ok');
+           header('location:http://172.23.2.174/shareholder_dividend/shareholder/authorize_cashpayment?authorize=ok');
  
     }
 }

@@ -131,7 +131,7 @@ $query = mysqli_query($conn,"SELECT * from shareholders where account_no = '$nam
       $balance_query = mysqli_query($conn,"SELECT * from balance where account_no = '$name' group by name order by id ASC") or die(mysqli_error($conn));
       $balance_rows = mysqli_fetch_array($balance_query);
       $a = 0;      
-      
+   //does one person have more than one account_no?   
   while ($rows = mysqli_fetch_array($query)) {
           
         $a = $a + 1;
@@ -145,12 +145,13 @@ $query = mysqli_query($conn,"SELECT * from shareholders where account_no = '$nam
       <td><?php echo $rows['name']; ?></td>
       <td><?php echo number_format($share_subscribed_inbirr2,2); ?></td>
       <?php
-
+      
       $result = mysqli_query($conn,"SELECT *,sum(total_share_transfered_in_birr) from transfer where account_no = '$name' and (value_date BETWEEN '$from' and '$to') and status_of_transfer = 'authorized'") or die(mysqli_error($conn));
+      
       while($row = mysqli_fetch_array($result)){
 
       $result1 = mysqli_query($conn,"SELECT *,sum(total_share_transfered_in_birr) from transfer where raccount_no = '$name' and (value_date BETWEEN '$from' and '$to') and status_of_transfer = 'authorized'") or die(mysqli_error($conn));
-
+//do sold and bought share have r/ship?
       while($fetch = mysqli_fetch_array($result1)){
 
       ?>
@@ -697,7 +698,7 @@ $query = mysqli_query($conn,"SELECT * from shareholders where account_no = '$nam
     } 
 
     // average paid up capital 
-
+      // echo "SELECT * from capitalized where account_no = '$name' and (year BETWEEN '$from' and '$to') and capitalized_status = 'authorized'";
       $resultp = mysqli_query($conn,"SELECT * from capitalized where account_no = '$name' and (year BETWEEN '$from' and '$to') and capitalized_status = 'authorized'") or die(mysqli_error($conn));
 
       $results = array();
@@ -905,7 +906,7 @@ $query = mysqli_query($conn,"SELECT * from shareholders where account_no = '$nam
         echo $diff + 1;
 
           } 
-          echo "SELECT * from capitalized where account_no = '$name' and (year BETWEEN '$from' and '$to') and capitalized_status = 'authorized'";
+          // echo "SELECT * from capitalized where account_no = '$name' and (year BETWEEN '$from' and '$to') and capitalized_status = 'authorized'";
           $average = mysqli_query($conn,"SELECT * from capitalized where account_no = '$name' and (year BETWEEN '$from' and '$to') and capitalized_status = 'authorized'") or die(mysqli_error($conn));
 
           while($av = mysqli_fetch_array($average)){

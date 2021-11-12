@@ -1343,7 +1343,7 @@ $result = $this->shareholder_model->create_request($data);
 if ($result == TRUE) {
 	
 $data['message_display'] = 'Share Request Created Successfully !';
-header('location: http://127.0.0.1/shareholder_final/shareholder/sharerequest');
+header('location: http://172.23.2.174/shareholder_final/shareholder/sharerequest');
 	 //redirect(current_url());
 
 } else {
